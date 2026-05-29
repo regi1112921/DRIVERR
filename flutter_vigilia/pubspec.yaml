@@ -1,0 +1,39 @@
+name: tats
+description: Traffic Alert & Tiredness System — 100% Offline
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cámara
+  camera: ^0.11.0+2
+
+  # TFLite para inferencia YOLO
+  flutter_tflite: ^1.0.1
+
+  # Preferencias (guardar historial)
+  shared_preferences: ^2.2.3
+
+  # Fuentes
+  google_fonts: ^6.2.1
+
+  # Utilidades
+  intl: ^0.19.0
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/yolov8_tats.tflite
+    - assets/models/labels.txt
