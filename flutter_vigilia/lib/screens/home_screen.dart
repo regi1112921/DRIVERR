@@ -148,11 +148,11 @@ class _HomeScreenState extends State<HomeScreen>
                   const SizedBox(height: 36),
 
                   // Feature chips
-                  Wrap(
+                  const Wrap(
                     spacing: 10,
                     runSpacing: 10,
                     alignment: WrapAlignment.center,
-                    children: const [
+                    children: [
                       _Chip(label: 'Detección de Sueño',   dot: T.green),
                       _Chip(label: 'Alerta de Bostezo',    dot: T.orange),
                       _Chip(label: 'Celular / Tabaco',     dot: T.red),
